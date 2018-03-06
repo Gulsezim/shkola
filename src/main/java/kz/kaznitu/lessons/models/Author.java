@@ -59,7 +59,7 @@ public class Author {
         return language;
     }
 
-    public void setEmail(String language) {
+    public void setLanguage(String language) {
         this.language = language;
     }
     public String getLevel() {
