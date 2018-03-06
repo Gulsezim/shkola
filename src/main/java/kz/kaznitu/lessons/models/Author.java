@@ -10,13 +10,17 @@ public class Author {
     private String firstName ;
     private String lastName ;
     private String email ;
+    private String language ;
+    private String level ;
 
     public Author(){}
 
-    public Author(String firstName, String lastName, String email) {
+    public Author(String firstName, String lastName, String email, String language, String level) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.language = language;
+        this.level = level;
     }
 
     public long getId() {
@@ -49,5 +53,20 @@ public class Author {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+    
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setEmail(String language) {
+        this.language = language;
+    }
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
     }
 }
