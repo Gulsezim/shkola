@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" th:href = "@{/css/shkola.css}" />
 </head>
 <body>
-<form action="/demo/add" method="GET" modelAttribute="author">
-    First Name <input type="text" id="firstnamee" name="firstname"><br>
-    Last Name<input type="text" id="lastnamee" name="lastname"><br>
-    Email <input type="text" id="emaile" name="email"><br>
+<div class="dropdown">
+    <button class="dropbtn">Тіл</button>
+    <div class="dropdown-content">
+        <a>Русский</a>
+        <a>Қазақша</a>
+        <a>English</a>
+    </div>
+</div>
+<div class="f"><p>Шет тілдеріне арналған онлайн-мектеп</p></div>
+<div class="box">
+    <br>
+    <form action="/demo/add" method="GET" modelAttribute="author">
+        <br>
+        <div class="f1">Аты<input type="text" id="firstnamee" name="firstname"><br></div>
+        <br>
+        <div class="f1">Жөні<input type="text" id="lastnamee" name="lastname"><br></div>
+        <br>
+        <div class="f1">Email<input type="text" id="emaile" name="email"><br></div>
+        <br>
+        <input type="submit" value="Жіберу" id="button">
 
-    <input type="submit" value="ok">
-
-</form>
+    </form>
+</div>
 </body>
 </html>
